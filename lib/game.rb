@@ -34,7 +34,6 @@ class Game
 
   def set_fleet
     set_ships_prompt
-    # set_battleship(head_yx, tail_yx)
     player_input = get_player_input
     set_battleship(player_input[0], player_input[1])
   end
@@ -52,9 +51,5 @@ class Game
     tail_location = [ty, tx]
     ship_location = [head_location, tail_location]
   end
-
-  # def set_all_ships(player)
-  #   ships.each { |ship| }
-  # end
 
 end
